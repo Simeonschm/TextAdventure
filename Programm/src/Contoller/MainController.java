@@ -15,6 +15,6 @@ public class MainController {
     }
 
     public String getPlayerName() {
-        return player.getName() ;
+        return player.getPlayerName() ;
     }
 }
