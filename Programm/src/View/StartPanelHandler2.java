@@ -7,18 +7,18 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class StartPanelHandler2 {
-    private JTextField name;
+    private JTextField name2;
     private JTextField choosePlayer;
     private JLabel Name;
     private JButton startButton2;
-    private MainView1 mainView;
+    private MainView2 mainView2;
     private JPanel panel;
     private JLabel choose;
     private JLabel start;
 
-    public StartPanelHandler1(MainView1 mainView) {
+    public StartPanelHandler2(MainView2 mainView) {
         createButtons();
-        this.mainView = mainView;
+        this.mainView2 = mainView2;
 
     }
 
@@ -38,10 +38,10 @@ public class StartPanelHandler2 {
 
 
     private void startButton2pressed(){
-        String name = name.getText();
+        String name = name2.getText();
         String player= choosePlayer.getText();
-        mainView.play(name,chooseplayer);
+        mainView2.play(name,player);
     }
 }
 
-}
+

@@ -31,7 +31,7 @@ public class MainView1 extends JFrame {
         this.getContentPane().removeAll();
         this.getContentPane().invalidate();
 
-        this.gamePanel = new GamePanelHandler1();
+        //this.gamePanel = new GamePanelHandler1();
         this.getContentPane().add(gamePanel);
         this.getContentPane().revalidate();
 
