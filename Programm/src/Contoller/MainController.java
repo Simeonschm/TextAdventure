@@ -1,5 +1,7 @@
 package Contoller;
 
+import Model.Player;
+
 public class MainController {
 
     private Player player;
@@ -8,12 +10,12 @@ public class MainController {
 
     }
 
-    private void createPlayer() {
+    public void createPlayer(String n) {
 
     }
 
     public String getPlayerName() {
-
+        return null ;
     }
 
 }

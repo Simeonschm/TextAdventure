@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class MainView1 extends JFrame {
 
-    private MainController maincontroller;
+    private MainController mainController;
     private JPanel startPanel, gamePanel;
 
 
@@ -31,7 +31,7 @@ public class MainView1 extends JFrame {
         this.getContentPane().removeAll();
         this.getContentPane().invalidate();
 
-        this.gamePanel = new GamePanelHandler(mainController.getPlayerName(),mainController.getPlayerLevel(),mainController).getPanel();
+        this.gamePanel = new GamePanelHandler1();
         this.getContentPane().add(gamePanel);
         this.getContentPane().revalidate();
 

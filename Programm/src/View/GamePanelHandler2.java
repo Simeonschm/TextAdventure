@@ -1,5 +1,7 @@
 package View;
 
+import javax.swing.*;
+
 public class GamePanelHandler2 {
     private JPanel panel2;
     private JLabel name;
@@ -11,4 +13,7 @@ public class GamePanelHandler2 {
     private JLabel action;
     private JLabel powerMonster;
     private JLabel getMonsterPower;
+
 }
+
+
