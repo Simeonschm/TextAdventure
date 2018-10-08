@@ -10,12 +10,12 @@ public class MainController {
 
     }
 
-    public void createPlayer(String n) {
-
+    public void createPlayer(String name) {
+        player = new Player(name);
     }
 
     public String getPlayerName() {
-        return null ;
+        return player.getPlayerName() ;
     }
 
 }
