@@ -5,4 +5,5 @@ public class FigureHandler {
     public FigureHandler(){
 
     }
+
 }
