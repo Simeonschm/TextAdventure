@@ -6,7 +6,6 @@ public class Player extends Figure {
 
     public Player(String name){
         this.name = name;
-
     }
 
     public String getPlayerName() {
