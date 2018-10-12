@@ -17,4 +17,13 @@ public class MainController {
     public String getPlayerName() {
         return player.getName() ;
     }
+
+    public int getPlayerStrength() {
+        return player.getStrength();
+    }
+
+    public int getPlayerLevel() {
+        return player.getLevel();
+
+    }
 }

@@ -1,6 +1,7 @@
 package Model;
 
 public abstract class Figure {
+
     private String Name;
     private int Strength;
     private int Level;
