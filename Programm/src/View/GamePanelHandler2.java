@@ -14,7 +14,7 @@ public class GamePanelHandler2 {
     private JLabel playerName;
     private JLabel power;
     private JLabel playerPower;
-    private JTextField textField1;
+    private JTextField actionText;
     private JLabel action;
     private JLabel MonsterPower;
     private JLabel getMonsterPower;
@@ -22,7 +22,7 @@ public class GamePanelHandler2 {
     private JLabel level;
 
 
-    public GamePanelHandler(String name, int strength, int level){
+    public GamePanelHandler2( String name, int strength, int level){
         playerName.setText(name);
         playerPower.setText(String.valueOf(strength));
         playerPower.setText(String.valueOf(level));
@@ -35,11 +35,10 @@ public class GamePanelHandler2 {
         return panel2;
     }
 
-    private void createButtons(){
 
-    }
 
     public void updatePower(){
+
 
     }
 
