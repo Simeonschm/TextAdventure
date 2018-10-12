@@ -19,13 +19,15 @@ public class GamePanelHandler2 {
     private JLabel MonsterPower;
     private JLabel getMonsterPower;
     private JTextField writeWeitherYouWantTextField;
-    private JLabel level;
+    private JLabel Level;
 
 
-    public GamePanelHandler2( String name, int strength, int level){
+    public GamePanelHandler2( String name, int strength, int level,int monsterPower){
         playerName.setText(name);
         playerPower.setText(String.valueOf(strength));
-        playerPower.setText(String.valueOf(level));
+        Level.setText(String.valueOf(level));
+
+        getMonsterPower.setText(String.valueOf(monsterPower));
 
 
 
