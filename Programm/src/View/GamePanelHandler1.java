@@ -5,12 +5,16 @@ import javax.swing.*;
 public class GamePanelHandler1 {
 
 
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
+    private JButton reloadButton;
+    private JButton shootButton;
+    private JButton hideButton;
     private JTextField moderator;
     private JEditorPane editorPane1;
-    private JLabel name;
+    private JLabel MonsterName;
+    private JLabel MonsterVitilaty;
+    private JLabel Name;
+    private JLabel Vitilaty;
+    private JLabel Level;
 
 
     public GamePanelHandler1() {
