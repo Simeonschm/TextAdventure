@@ -7,7 +7,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class StartPanelHandler2 {
-    private JTextField name2;
+    private JTextField name;
     private JTextField choosePlayer;
     private JLabel Name;
     private JButton startButton2;
@@ -16,7 +16,7 @@ public class StartPanelHandler2 {
     private JLabel choose;
     private JLabel start;
 
-    public StartPanelHandler2(MainView2 mainView) {
+    public StartPanelHandler2(MainView2 mainView2) {
         createButtons();
         this.mainView2 = mainView2;
 
@@ -38,9 +38,9 @@ public class StartPanelHandler2 {
 
 
     private void startButton2pressed(){
-        String name = name2.getText();
-        String player= choosePlayer.getText();
-        mainView2.play(name,player);
+        String name2 = name.getText();
+        String gender= choosePlayer.getText();
+        mainView2.play(name2,gender);
     }
 }
 

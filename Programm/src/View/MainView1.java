@@ -20,7 +20,7 @@ public class MainView1 extends JFrame {
         this.setLocation(50,50);
         this.setSize(1000,750);
         this.setResizable(false);
-        this.setTitle("QAdventureeeee");
+        this.setTitle("Adventureeeee");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
