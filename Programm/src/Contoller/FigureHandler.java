@@ -6,4 +6,7 @@ public class FigureHandler {
 
     }
 
+    private void handleAction(){
+
+    }
 }
