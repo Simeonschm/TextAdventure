@@ -19,7 +19,7 @@ public class MainController {
     }
 
     public int getPlayerStrength() {
-        return player.getStrength();
+        return player.getVitality();
     }
 
     public int getPlayerLevel() {

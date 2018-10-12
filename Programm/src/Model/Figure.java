@@ -3,13 +3,13 @@ package Model;
 public abstract class Figure {
 
     private String Name;
-    private int Strength;
+    private int vitality;
     private int Level;
     private int fight;
 
-    public Figure(String name, int strength, int level) {
+    public Figure(String name, int vitality, int level) {
         Name = name;
-        Strength = strength;
+        this.vitality = vitality;
         Level = level;
     }
 
@@ -18,12 +18,12 @@ public abstract class Figure {
         return Name;
     }
 
-    public int getStrength() {
-        return Strength;
+    public int getVitality() {
+        return vitality;
     }
 
-    public void setStrength(int strength) {
-        Strength = strength;
+    public void setVitality(int vitality) {
+        this.vitality = vitality;
     }
 
     public int getLevel() {
