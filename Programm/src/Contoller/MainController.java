@@ -11,7 +11,7 @@ public class MainController {
     }
 
     public void createPlayer(String name) {
-        player = new Player(name);
+        player = new Player(name, 1, 1, "");
     }
 
     public String getPlayerName() {
