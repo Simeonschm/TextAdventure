@@ -11,14 +11,14 @@ public class MainController {
     }
 
     public void createPlayer(String name) {
-        player = new Player(name, 1, 1, "");
+        player = new Player(name, 2, 1, "");
     }
 
     public String getPlayerName() {
         return player.getName() ;
     }
 
-    public int getPlayerStrength() {
+    public int getPlayerVitality() {
         return player.getVitality();
     }
 
