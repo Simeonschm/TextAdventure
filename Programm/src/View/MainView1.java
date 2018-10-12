@@ -17,8 +17,8 @@ public class MainView1 extends JFrame {
 
         this.getContentPane().add(startPanel);
 
-        this.setLocation(50,50);
-        this.setSize(1000,750);
+        this.setLocation(50, 50);
+        this.setSize(1000, 750);
         this.setResizable(false);
         this.setTitle("Adventureeeee");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

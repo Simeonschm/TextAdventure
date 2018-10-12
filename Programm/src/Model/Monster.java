@@ -7,7 +7,7 @@ public class Monster extends Figure {
 
     }
 
-    public String[] setMonstername() {
+    public String setMonstername() {
         String[] MN = new String[10];
         MN[0] = "Poisongolem";
         MN[1] = "Dead Dweller";
@@ -20,7 +20,8 @@ public class Monster extends Figure {
         MN[8] = "Shadow Thing";
         MN[9] = "Ripper";
 
-        return MN;
+        int index = (int)(Math.random() * 9);
+        return MN[index];
     }
 }
 
