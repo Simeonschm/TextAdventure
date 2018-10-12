@@ -2,14 +2,12 @@ package Model;
 
 public class Monster extends Figure {
 
-
-
     public Monster(String Name, int Strength, int Level) {
         super(Name, Strength, Level);
 
     }
 
-    public String[] setMonsterbname() {
+    public String[] setMonstername() {
         String[] MN = new String[10];
         MN[0] = "Monster1";
         MN[1] = "Monster2";
