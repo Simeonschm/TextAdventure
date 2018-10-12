@@ -8,8 +8,9 @@ public class FigureHandler {
     private Player player;
     private Monster monster;
 
-    public FigureHandler(){
-
+    public FigureHandler(Player player, Monster monster){
+        this.player = player;
+        this.monster = monster;
     }
 
     private void handleAction(int action){
@@ -18,9 +19,7 @@ public class FigureHandler {
             if (monsterAction == 2) {
                 player.setVitality(player.getVitality() - 1);
             }
-        }
-
-        if (action == 2){
+        }else if (action == 2){
             if (monsterAction == 1){
                 monster.setVitality(monster.getVitality() - 1);
             }
@@ -28,9 +27,7 @@ public class FigureHandler {
                 player.setVitality(player.getVitality() - 1);
                 monster.setVitality(monster.getVitality() - 1);
             }
-        }
-
-        if (action == 3){
+        }else if (action == 3){
 
         }
     }
