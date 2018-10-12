@@ -40,9 +40,11 @@ public class GamePanelHandler2 {
     public void updatePower(){
 
 
+
     }
 
     public void handleAction(String answer){
+        answer= writeWeitherYouWantTextField.getText();
 
     }
 
