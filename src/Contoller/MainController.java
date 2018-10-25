@@ -43,4 +43,23 @@ public class MainController {
     public int getMonsterLevel() {
         return monster.getLevel();
     }
+
+    public boolean getPlayerLoaded(){return player.getLoaded();}
+
+
+    public void answer(String playerAnswer){
+        String MonsterA= monster.randomAction();
+        if(playerAnswer== "shoot"&& MonsterA == "reload"){
+            monster.setVitality(monster.getVitality()-1);
+
+        }
+        if(playerAnswer== "reload"&& MonsterA =="shoot"){
+            player.setVitality(player.getVitality()-1);
+        }
+        if (playerAnswer=="reload" && player.getLoaded()== false){
+            player.setLoaded(true);
+        }
+
+
+    }
 }

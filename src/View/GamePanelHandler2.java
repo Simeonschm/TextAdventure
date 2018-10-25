@@ -1,11 +1,7 @@
 package View;
-import javax.swing.*;
-
-
+import Contoller.MainController;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class GamePanelHandler2 {
     private JPanel panel2;
@@ -17,15 +13,22 @@ public class GamePanelHandler2 {
     private JTextField actionText;
     private JLabel action;
     private JLabel MonsterPower;
-    private JLabel getMonsterPower;
+    private JLabel getloaded;
     private JTextField writeWeitherYouWantTextField;
     private JLabel Level;
+    private JLabel getMonsterPower;
+    private JLabel princessPower;
+    private JLabel monsterName;
+    private MainController mainC;
 
 
-    public GamePanelHandler2( String name, int strength, int level,int monsterPower){
+    public GamePanelHandler2(String name, int strength, int level, int monsterPower, MainController mainC){
+        this.mainC= mainC;
         playerName.setText(name);
         playerPower.setText(String.valueOf(strength));
-        Level.setText(String.valueOf(level));
+        getloaded.setText(String.valueOf(mainC.getPlayerLoaded()));
+        monsterName.setText(mainC.getMonsterName());
+
 
         getMonsterPower.setText(String.valueOf(monsterPower));
 
@@ -40,14 +43,16 @@ public class GamePanelHandler2 {
 
 
     public void updatePower(){
-
-
+        playerPower.setText(String.valueOf(mainC.getPlayerVitality()));
+        getloaded.setText(String.valueOf(mainC.getPlayerLoaded()));
+        getMonsterPower.setText(String.valueOf(mainC.getMonsterVitality()));
 
     }
 
     public void handleAction(String answer){
         answer= writeWeitherYouWantTextField.getText();
-
+        mainC.answer(answer);
+        updatePower();
     }
 
 }
