@@ -23,7 +23,7 @@ public class FigureHandler {
         if(playerAction== "reload"&& MonsterA =="shoot"){
             player.setVitality(player.getVitality()-1);
         }
-        if (playerAction=="reload" && player.getLoaded()== false){
+        if (playerAction=="reload"){
             player.setLoaded(true);
         }
 

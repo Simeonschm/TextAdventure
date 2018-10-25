@@ -62,7 +62,7 @@ public class GamePanelHandler2 {
     }
 
     public void handleAction(){
-        String answer= writeWeitherYouWantTextField.getText();
+        String answer= actionText.getText();
         mainC.answer(answer);
         updatePower();
     }

@@ -9,16 +9,21 @@ public class MainController {
     private Monster monster;
 
     public MainController(){
-        figureHandler= new FigureHandler(player,monster);
 
     }
 
-    public void createPlayer(String name) {
+    public Player createPlayer(String name) {
         player = new Player(name, 2, 1, "");
+        return player;
     }
 
-    public void createMonster(String name) {
-        monster = new Monster(monster.setMonstername(), 2, 1);
+    public Monster createMonster(String name) {
+        monster = new Monster(name, 2, 1);
+        return monster;
+    }
+    public void createFigureHandler(String playerName){
+
+        figureHandler= new FigureHandler(createPlayer(playerName),createMonster("ulf"));
     }
 
     public String getPlayerName() {

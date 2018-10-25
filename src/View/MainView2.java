@@ -26,7 +26,9 @@ public class MainView2 extends JFrame {
     }
 
     public void play(String name, String player){
-        mainController.createPlayer(name);
+       // mainController.createPlayer(name);
+        //ainController.createMonster("ulf");
+        mainController.createFigureHandler(name);
 
         this.getContentPane().removeAll();
         this.getContentPane().invalidate();

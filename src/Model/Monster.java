@@ -27,22 +27,22 @@ public class Monster extends Figure {
     }
 
     public String randomAction() {
-        int randomAction = (int) (Math.random() * 2);
+        int randomAction = (int) (Math.random() * 1);
         if (loaded == false) {
-            if (randomAction == 2) {
+            if (randomAction == 1) {
                 loaded = true;
                 return new String("reload");
 
             }
-            if (randomAction == 1) {
+            if (randomAction == 0) {
                 return new String("hide");
 
             }
         } else {
-            if (randomAction == 2) {
+            if (randomAction == 1) {
                 return new String("hide");
             }
-            if (randomAction == 1) {
+            if (randomAction == 0) {
                 loaded=false;
                 return new String("shoot");
 
