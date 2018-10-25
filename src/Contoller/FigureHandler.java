@@ -13,8 +13,22 @@ public class FigureHandler {
         this.monster = monster;
     }
 
-    private void handleAction(int action){
-        int monsterAction = (int)(Math.random() * 3 + 1);
+    public void handleAction(String playerAction){
+
+        String MonsterA= monster.randomAction();
+        if(playerAction== "shoot"&& MonsterA == "reload"){
+            monster.setVitality(monster.getVitality()-1);
+
+        }
+        if(playerAction== "reload"&& MonsterA =="shoot"){
+            player.setVitality(player.getVitality()-1);
+        }
+        if (playerAction=="reload" && player.getLoaded()== false){
+            player.setLoaded(true);
+        }
+
+
+       /* int monsterAction = (int)(Math.random() * 3 + 1);
         if (action == 1){
             if (monsterAction == 2) {
                 player.setVitality(player.getVitality() - 1);
@@ -30,5 +44,7 @@ public class FigureHandler {
         }else if (action == 3){
 
         }
+    */
+
     }
 }

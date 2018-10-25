@@ -4,11 +4,12 @@ import Model.Monster;
 import Model.Player;
 
 public class MainController {
-
+    private FigureHandler figureHandler;
     private Player player;
     private Monster monster;
 
     public MainController(){
+        figureHandler= new FigureHandler(player,monster);
 
     }
 
@@ -48,18 +49,7 @@ public class MainController {
 
 
     public void answer(String playerAnswer){
-        String MonsterA= monster.randomAction();
-        if(playerAnswer== "shoot"&& MonsterA == "reload"){
-            monster.setVitality(monster.getVitality()-1);
-
-        }
-        if(playerAnswer== "reload"&& MonsterA =="shoot"){
-            player.setVitality(player.getVitality()-1);
-        }
-        if (playerAnswer=="reload" && player.getLoaded()== false){
-            player.setLoaded(true);
-        }
-
+        figureHandler.handleAction(playerAnswer);
 
     }
 }

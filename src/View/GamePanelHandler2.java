@@ -2,6 +2,8 @@ package View;
 import Contoller.MainController;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GamePanelHandler2 {
     private JPanel panel2;
@@ -19,20 +21,30 @@ public class GamePanelHandler2 {
     private JLabel getMonsterPower;
     private JLabel princessPower;
     private JLabel monsterName;
+    private JButton actionButton;
     private MainController mainC;
 
 
     public GamePanelHandler2(String name, int strength, int level, int monsterPower, MainController mainC){
+        createButtons();
         this.mainC= mainC;
         playerName.setText(name);
         playerPower.setText(String.valueOf(strength));
         getloaded.setText(String.valueOf(mainC.getPlayerLoaded()));
         monsterName.setText(mainC.getMonsterName());
-
-
         getMonsterPower.setText(String.valueOf(monsterPower));
+        updatePower();
 
 
+
+    }
+    private void createButtons(){
+        actionButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                handleAction();
+            }
+        });
 
     }
 
@@ -49,8 +61,8 @@ public class GamePanelHandler2 {
 
     }
 
-    public void handleAction(String answer){
-        answer= writeWeitherYouWantTextField.getText();
+    public void handleAction(){
+        String answer= writeWeitherYouWantTextField.getText();
         mainC.answer(answer);
         updatePower();
     }
